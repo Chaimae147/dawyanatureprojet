@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dawya Nature</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navbaarr{
+position: absolute;
+height: 70px;
+padding:  15px;
+display: flex;
+justify-content: space-between;
+width: 100%;
+box-sizing: border-box;
+align-items: center;
+background-color:whitesmoke;
+}
+
+#background-video {
+width: 100%;
+height: 92vh;
+object-fit: cover;
+background-size: cover;
+/*position: fixed;*/
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: -1;
+margin-bottom: 100px;
+}
+
+.navbaarr a{
+color: black;
+font-family: century gothic;
+font-weight: bold;
+text-decoration: none;
+
+}
+.navbaarr  .nav-links{
+display: flex;
+align-items: center;
+}
+.navbaarr  .nav-links ul{
+display: flex;
+}
+.navbaarr  .nav-links ul li{
+margin: 0 20px;
+list-style: none;
+}
+.navbaarr  .nav-links ul li a:hover{
+color: orange;
+font-weight: bolder;
+}
+.navbaarr .menu-hamburger{
+display: none;
+position: absolute;
+width: 50px;
+height: 40px;
+right: 30px;
+top: 20px;
+}
+.containerr{
+width: 90%;
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.leftt{
+width: 60%;
+height: 550px;
+background-image: url('Boujmil\ Piste\ Arc\ en\ ciel.JPG');
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 8px;
+
+
+}
+.rightt{
+width: 100%;
+height: 700px;
+background-color: #C5F264;
+display: flex;
+align-items: center;
+justify-items: center;
+padding: 30px;
+border-radius: 8px;
+color: white;
+margin-left: -150px;
+line-height: normal;
+letter-spacing: 0;
+margin-top:1% ;
+font-weight: bold;
+
+
+
+
+}
+.rightt h1{
+font-size: 40px;
+font-weight: lighter;
+font-family: lemon milk;
+color: #F4711F;
+}
+.rightt p{
+margin: 20px 0;
+font-weight: century gothic;
+line-height: 25px;
+font-weight: bold;
+}
+.rightt a{
+text-decoration: none;
+text-transform: uppercase;
+background-color: white;
+color: black;
+padding: 20px 30px;
+display: inline-block;
+letter-spacing: 2px;
+
+}
+.langWrap a{
+text-transform: uppercase;
+color: #fff;
+text-decoration: none;
+padding: 0 15px;
+font-weight: bold;
+margin-top: 50px;
+font-size: 18px;
+}
+
+.containerSS {
+position: relative;
+width: 800PX;
+margin-top: 50px;
+text-align: center;
+
+}
+
+.immg{
+width: 30px;
+height: 30px;
+border-radius: 50%
+}
+    </style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<!-- <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>dawya nature </a>
+
+  
+
+    <div class="icons">
+        
+        
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">acceuil </a>
+        <a href="#home">a propos de </a>
+        <a href="#packages">galerie</a>
+        <a href="#blogs">offres</a>
+        <a href="#contact">commentaire</a>
+        <a href="#point de vue">point de vue </a>
+        <a href="#reservation">reservation </a>
+        
+        
+    </nav>
+
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>Nom d'utilisateur</span>
+            <input type="text" placeholder="entrer votre nome">
+        </div>
+
+        <div class="inputBox">
+            <span>le mot de passe</span>
+            <input type="password" placeholder="entre votre mot de pass">
+        </div>
+
+        <div class="rappelles toi">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">Souviens-toi de moi</label>
+        </div>
+
+        <input type="submit" class="btn" value="login">
+
+    </form>
+
+</header> -->
+<nav class=" fixed-top  ">
+    <div class="navbaarr">
+    <a class="logo" href="#"><img src="boujmilim/dawya-removebg-preview 2.png" alt="" height="50px"></a>
+    <div class="nav-links">
+      <ul>
+        <li class=""><a href="#background-video">ACCEUIL</a></li>
+        <li><a href="#description">A PROPOS DE </a></li>
+        <li><a href="#offre">LES OFFRES</a></li>
+        <li><a href="reservationnn-1 (1).html">RESERVATION</a></li>
+      </ul>
+    </div>
+    <img class="menu-hamburger" src="flags/2311531.png" alt="">
+</div>
+  </nav>
+    <header></header>
+     <script>
+       const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+     </script>  
+     
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <video id="background-video" autoplay loop muted poster="boujmil images/Espace Arbre 3.jpg">
+        <source src="boujmil.mp4" type="video/mp4">
+        </video>
+        <section class="sect">
+          <div class="containerr">
+              <div class="leftt">
+                <span class="containerSS">
+                    <span class="langWrap">
+                        <a  href="#francais" style="margin-top: 50px;" language='FRANCAIS' class="active" id="francais"><img src="flags/download.png" class="immg" alt=""></a>
+                        <a href="#espagnole" language='ESPAGNOLE' id="espagnole"><img src="flags/download (2).png" class="immg" alt=""></a>
+                        <a  href="#english" language='ENGLISH' id="english"><img src="flags/download (1).png" class="immg" alt=""></a>
+                    </span>
+                </span>
+                  
+              </div>
+              <div class="rightt" id="description">
+                
+                  <div class="content" >
+                      <h1 class="title" >A PROPOS DE </h1>
+                      <p class="description" > Vous êtes en quête d’une expérience totalement inédite et singulière en pleine
+                          nature ? … Alors laissez-vous emporter par des expériences 100 % nature
+                          avec DAWYA NATURES pour le plaisir d’un retour au source en profitant
+                          intelligemment et avec respect l’arrière pays Jbala et ses espaces !
+                          Un trésors du monde rural, le Douar Boujmil est un village pittoresque qui
+                          s’offrent à vous ; ces espaces naturels exceptionnels, ces habitants Al-Houz
+                          restés traditionnellement paysans et simple, ces montages calcaires facturés
+                          et majestueuses, sa(ses) source(s) d’eau clair et résurgences permanente(s),
+                          ces rochers comme des statuts millénaires, sa faune - singe Mangot ,
+                          corneille, épervier et autres rapaces, sa flore luxuriante au printemps e ces
+                          olivier géants mufti-centenaire , son panorama unique sur la méditerranée et
+                          les montagne du Rif !
+                          Dans le prolongement de la chaîne Monte Blanco, Boujmil est à 150 mètre
+                          d’altitude et le pic du mont Boujmil à 681 m avec une vue magnifique sur la
+                          mer méditerranée.
+                          Le Douar Boujmil, un site encore méconnue et à préserver, est
+                          espace idéal pour un retour à la nature dont nous avons tous
+                          besoin !
+                      </p>
+                      <!-- <a href="#" class="bnt"> click me</a> -->
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script>
+        const langEl = document.querySelector('.langWrap');
+        const link = document.querySelectorAll('a');
+        const titleEl = document.querySelector('.title');
+        const descrEl = document.querySelector('.description');
+    
+        link.forEach(el => {
+          el.addEventListener('click', () => {
+            langEl.querySelector('.active').classList.remove('active');
+            el.classList.add('active');
+    
+            const attr = el.getAttribute('language');
+    
+            titleEl.textContent = data[attr].title;
+            descrEl.textContent = data[attr].description;
+          });
+        });
+        
+        var data = {
+  "FRANCAIS": 
+  {
+    "title": "A PROPOS DE",
+    "description": 
+        " Vous êtes en quête d’une expérience totalement inédite et singulière en pleine nature ? … Alors laissez-vous emporter par des expériences 100 % nature avec DAWYA NATURES pour le plaisir d’un retour au source en profitant intelligemment et avec respect l’arrière pays Jbala et ses espaces ! Un trésors du monde rural, le Douar Boujmil est un village pittoresque qui s’offrent à vous ; ces espaces naturels exceptionnels, ces habitants Al-Houz restés traditionnellement paysans et simple, ces montages calcaires facturés et majestueuses, sa(ses) source(s) d’eau clair et résurgences permanente(s), ces rochers comme des statuts millénaires, sa faune - singe Mangot , corneille, épervier et autres rapaces, sa flore luxuriante au printemps e ces olivier géants mufti-centenaire , son panorama unique sur la méditerranée et les montagne du Rif ! Dans le prolongement de la chaîne Monte Blanco, Boujmil est à 150 mètre d’altitude et le pic du mont Boujmil à 681 m avec une vue magnifique sur la mer méditerranée. Le Douar Boujmil, un site encore méconnue et à préserver, est espace idéal pour un retour à la nature dont nous avons tous besoin !"
+  },
+  "ESPAGNOLE": 
+  {
+    "title":"SOBRE",
+    "description": 
+        "¿Está buscando una experiencia completamente nueva y única en el corazón de la naturaleza? … ¡Así que déjese llevar por experiencias 100% naturales con DAWYA NATURES por el placer de volver a la fuente disfrutando de manera inteligente y respetuosa del interior de Jbala y sus espacios! Un tesoro del mundo rural, el Douar Boujmil es un pueblo pintoresco a su disposición; estos espacios naturales excepcionales, estos habitantes de Al-Houz que han permanecido tradicionalmente campesinos y sencillos, estas montañas calizas escarpadas y majestuosas, su(s) fuente(s) de agua clara y resurgimiento(s) permanente(s), estas rocas como estatutos milenarios, su fauna - Mangot mono, corneja, gavilán y otras rapaces, su exuberante flora en primavera y estos gigantes olivos centenarios, ¡su panorama único del Mediterráneo y las montañas del Rif! En la extensión de la cadena Monte Blanco, Boujmil se encuentra a 150 metros sobre el nivel del mar y la cima del Monte Boujmil a 681 m con una magnífica vista del mar Mediterráneo. ¡El Douar Boujmil, un sitio aún desconocido y por preservar, es un espacio ideal para un regreso a la naturaleza que todos necesitamos!"
+  },
+  "ENGLISH": 
+  {
+    "title": "ABOUT",
+    "description": 
+        "Are you looking for a completely new and unique experience in the heart of nature? … So let yourself be carried away by 100% nature experiences with DAWYA NATURES for the pleasure of a return to the source by intelligently and respectfully enjoying the Jbala hinterland and its spaces! A treasure of the rural world, the Douar Boujmil is a picturesque village available to you; these exceptional natural spaces, these Al-Houz inhabitants who have traditionally remained peasants and simple, these steep and majestic limestone mountains, its source(s) of clear water and permanent resurgence(s), these rocks like millennial statutes, its fauna - Mangot monkey, crow, sparrowhawk and other birds of prey, its luxuriant flora in spring and these giant centuries-old olive trees, its unique panorama of the Mediterranean and the Rif mountains! In the extension of the Monte Blanco chain, Boujmil is 150 meters above sea level and the peak of Mount Boujmil at 681 m with a magnificent view of the Mediterranean Sea. The Douar Boujmil, a site still unknown and to be preserved, is an ideal space for a return to nature that we all need!"
+  }
+}
+      </script>
+</section>
+
+<!-- home section ends -->
+
+<!-- filter form section starts  -->
+
+<section class="form-container" data-aos="zoom-in">
+
+    <form action="">
+
+       
+        <div class="inputBox">
+            <span>entree</span>
+            <input type="date">
+        </div>
+
+        <div class="inputBox">
+            <span>sortie</span>
+            <input type="date">
+        </div>
+
+        <input type="submit" value="rechercher" class="btn">
+
+    </form>
+
+</section>
+
+<!-- filter form section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">  <span>notre galerie</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (11).jpeg" alt="">
+                
+            </div>
+           
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (6).jpeg" alt="">
+               
+            </div>
+           
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (8).jpeg" alt="">
+                
+            </div>
+           
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images (1).jpeg" alt="">
+               
+            </div>
+          
+               
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (10).jpeg" alt="">
+             
+            </div>
+           
+               
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (6).jpeg" alt="">
+              
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+ <!--<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in">
+            <span>01</span>
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <span>02</span>
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <span>03</span>
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <span>04</span>
+            <i class="fas fa-globe"></i>
+            <h3>around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <span>05</span>
+            <i class="fas fa-hiking"></i>
+            <h3>new adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <span>01</span>
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+<!--
+<!-- pricing section starts  -->
+
+<!--<section class="pricing" id="pricing">
+
+    <h1 class="heading"> our <span>pricing</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in-up">
+            <h3> basic plan </h3>
+            <div class="price">
+                <span>$</span>
+                <span class="amount">30</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>10 days</li>
+                <li>food and drinks</li>
+                <li>safty guide</li>
+                <li>insurance</li>
+                <li>luxury hotel</li>
+            </ul>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up">
+            <h3> standard plan </h3>
+            <div class="price">
+                <span>$</span>
+                <span class="amount">50</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>20 days</li>
+                <li>food and drinks</li>
+                <li>safty guide</li>
+                <li>insurance</li>
+                <li>luxury hotel</li>
+            </ul>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up">
+            <h3> premium plan </h3>
+            <div class="price">
+                <span>$</span>
+                <span class="amount">90</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>30 days</li>
+                <li>food and drinks</li>
+                <li>safty guide</li>
+                <li>insurance</li>
+                <li>luxury hotel</li>
+            </ul>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> point <span>de vue</span> </h1>
+
+    <div class="swiper-container review-slider" data-aos="zoom-in">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-1.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-2.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-3.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-4.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Ajouter un commentaire</span>  </h1>
+   
+
+    <form action="" data-aos="zoom">
+
+        <div class="inputBox">
+            <input type="text" placeholder="nome" data-aos="fade-up">
+            <input type="email" placeholder="email" data-aos="fade-up">
+        </div>
+
+     
+        <textarea name="" placeholder="votre commentaire" id="" cols="30" rows="10" data-aos="fade-up"></textarea>
+        
+        <input type="submit" value="envoyer" class="btn">
+
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blog section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading" id="offre"> <span>offres</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/benefits-yoga-fb.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Stages bien-être & énergie</h3>
+                <p><b> Principe :</b> Ballade douce avec des étapes Médiation, Yoga du rire, Gym douce, Qi-gong ou Méditation pleine conscience</p>
+                <p><b> Période :</b>  Mars – Novembre  - durée : 4 heures avec un ftour beldi</p>
+                <p><b>bCibles :</b>  Adulte & Adolescent </p> 
+                <p><b> Animateur :</b> Animateur spécialisé</p>
+ 
+                <a href="#" class="btn">lire plus</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> Mars/Novembre </a>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (1).jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>observation du ciel</h3>
+                <p><b> Principe :</b> Promenades nocturnes et observation des étoiles avec des jumelles ou 
+                    un télescope.</p>
+                    <p><b>Période d’action : </b>  Février  – Novembre  - durée : 4 heures avec un ftour beldi</p>
+                   <p><b> Cibles : Adulte & Enfants</b></p> 
+                   <p><b> Animateur :</b> Animateur spécialisé</p>
+                <a href="#" class="btn">lire plus</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> Fevrier/Novembre </a>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="téléchargement (2).jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Land art</h3>
+                <p><b> Principe :</b> Créations d’installation land art éphémères en montage (mandala, suspension, 
+                    empilements…)	</p> 
+                   <p> <b> Période d’action : </b> Juin – Octobre - durée : 2,5 à 4 heures avec une pause ftour beldi </p>
+                   <p><b> Cibles : </b>Adultes & Enfants</p> 
+                   <p><b> Animateur :</b> Artistes ou Animateurs spécialistes land art</p>
+                <a href="#" class="btn">lire plus</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> Juin/Octobre </a>
+                 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blog section ends -->
+<!-- RESERVATION -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        >
+
+        <div class="box" data-aos="fade-up">
+            <h3>les liens de menu </h3> 
+            <a href="#"> <i class="fas fa-chevron-right"></i> Acceuil </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> A propos de </a> 
+             <a href="#"> <i class="fas fa-chevron-right"></i>Galerie </a> 
+             <a href="#"> <i class="fas fa-chevron-right"></i> offres </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Reservation </a>
+            
+          
+            <a href="#"> <i class="fas fa-chevron-right"></i>Point de vue  </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Commentaire </a>
+          
+           
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>information de contacte</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +212 6178 62 437</a>
+            <a href="#"> <i class="fas fa-envelop"></i> reza.dawya.nature@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Boujmil </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>Suivez-nous</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> Whatssap </a>
+        </div>
+
+    </div>
+
+    
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+
+AOS.init({
+    duration:800,
+    delay:400
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
