@@ -1,0 +1,581 @@
+
+input[type="date"]::before {
+  content: attr(placeholder)": ";
+  white-space: pre;
+}
+
+input[type="date"]:focus::before {
+  content: "" !important;
+}
+*{
+padding: 0;
+margin: 0;
+}
+/*navbar*/
+.navbaarr{
+position: absolute;
+height: 70px;
+padding:  15px;
+display: flex;
+justify-content: space-between;
+width: 100%;
+box-sizing: border-box;
+align-items: center;
+background-color:whitesmoke;
+}
+
+#background-video {
+width: 100%;
+height: 92vh;
+object-fit: cover;
+background-size: cover;
+/*position: fixed;*/
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: -1;
+margin-bottom: 100px;
+}
+
+.navbaarr a{
+color: black;
+font-family: century gothic;
+font-weight: bold;
+text-decoration: none;
+
+}
+.navbaarr  .nav-links{
+display: flex;
+align-items: center;
+}
+.navbaarr  .nav-links ul{
+display: flex;
+}
+.navbaarr  .nav-links ul li{
+margin: 0 20px;
+list-style: none;
+}
+.navbaarr  .nav-links ul li a:hover{
+color: orange;
+font-weight: bolder;
+}
+.navbaarr .menu-hamburger{
+display: none;
+position: absolute;
+width: 50px;
+height: 40px;
+right: 30px;
+top: 20px;
+}
+.section{
+margin-top: 50px;
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #ffff;
+}
+
+/*a propos de */
+.containerr{
+width: 90%;
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.leftt{
+width: 60%;
+height: 550px;
+background-image: url('Boujmil\ Piste\ Arc\ en\ ciel.JPG');
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 8px;
+
+
+}
+.rightt{
+width: 100%;
+height: 500px;
+background-color: #C5F264;
+display: flex;
+align-items: center;
+justify-items: center;
+padding: 30px;
+border-radius: 8px;
+color: white;
+margin-left: -150px;
+line-height: normal;
+letter-spacing: 0;
+margin-top:1% ;
+font-weight: bold;
+
+
+
+
+}
+.rightt h1{
+font-size: 40px;
+font-weight: lighter;
+font-family: lemon milk;
+color: #F4711F;
+}
+.rightt p{
+margin: 20px 0;
+font-weight: century gothic;
+line-height: 25px;
+font-weight: bold;
+}
+.rightt a{
+text-decoration: none;
+text-transform: uppercase;
+background-color: white;
+color: black;
+padding: 20px 30px;
+display: inline-block;
+letter-spacing: 2px;
+
+}
+.langWrap a{
+text-transform: uppercase;
+color: #fff;
+text-decoration: none;
+padding: 0 15px;
+font-weight: bold;
+margin-top: 50px;
+font-size: 18px;
+}
+
+.containerSS {
+position: relative;
+width: 800PX;
+margin-top: 50px;
+text-align: center;
+
+}
+
+.immg{
+width: 30px;
+height: 30px;
+border-radius: 50%
+}
+
+/*LES OFFRES*/
+.body1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+ 
+  
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(222, 243, 183);
+  padding: 15px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #000000;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #000000;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+  text-align: left;
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+/*RESERVATION*/
+.back{
+margin-top: 100px;
+background-image: url('boujmilim/20.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 1200px;
+width: 100%;
+position: absolute;
+
+
+}
+.box{
+margin-top: 20px;
+width: 770px;
+height: 870px;
+position: relative;
+margin-left: 400px;
+background: white;
+padding: 5px;
+opacity: 0.8;
+}
+.login{
+width: 800px;
+}
+.login__field{
+padding: 20px 0px;
+position: relative;
+}
+.login__input{
+border: none;
+border-bottom: 2px solid gray;
+background: none;
+padding: 10px;
+margin: 10px;
+font-weight: 700;
+width: 250px;
+transition: .2s;
+
+}
+.login__input:active,
+.login__input:focus,
+.login__input:hover{
+outline: none;
+border-bottom-color: #F47321;
+}
+.login__submit{
+background-color: #fff;
+font-size: 16px;
+margin-top: 10px;
+padding: 16px 20px;
+border-radius: 26px;
+border: 1px solid #d4d3e8;
+text-transform: uppercase;
+font-weight: 700;
+align-items: center;
+width: 220px;
+color: #F47321;
+box-shadow: 0px 2px 2px #F47321;
+cursor: pointer;
+transform: .2s;
+margin-left:200px ;
+}
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover{
+border-color: #F47321;
+outline: none;
+}
+
+
+
+/* pour les select checkbox */
+
+.multiselect {
+width: 300px;
+}
+
+.selectBox {
+position: relative;
+}
+
+.selectBox select {
+width: 100%;
+font-weight: bold;
+}
+
+.overSelect {
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+#checkboxes {
+display: none;
+border: 1px #dadada solid;
+background-color: #f5e0d4;
+}
+
+#checkboxes label {
+display: block;
+}
+
+#checkboxes label:hover {
+background-color: #F47321;
+}
+/* pour connu notre site internet */
+.multiselect {
+width: 300px;
+}
+
+.selectBox {
+position: relative;
+}
+
+.selectBox select {
+width: 100%;
+font-weight: bold;
+}
+
+.overSelect {
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+#choix {
+display: none;
+border: 1px #dadada solid;
+}
+
+#choix label {
+display: block;
+}
+
+#choix label:hover {
+background-color: #F47321;
+}
+.sectionn {
+font-family: sans-serif;
+min-height: 100vh;
+background-attachment: fixed;
+background-size: cover;
+background: #ffffff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*les images*/
+
+.sectionn{
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+
+.carousel {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  perspective: 100rem;
+}
+.carousel__cards {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+  transform: translateZ(-25rem);
+  transition: transform 0.3s ease-in;
+}
+.carousel__img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.carousel__card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 0.2rem;
+  font-size: 3em;
+  font-weight: 700;
+}
+.carousel__card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(25rem);
+}
+.carousel__card:nth-child(2) {
+  transform: rotateY(45deg) translateZ(25rem);
+}
+.carousel__card:nth-child(3) {
+  transform: rotateY(90deg) translateZ(25rem);
+}
+.carousel__card:nth-child(4) {
+  transform: rotateY(135deg) translateZ(25rem);
+}
+.carousel__card:nth-child(5) {
+  transform: rotateY(180deg) translateZ(25rem);
+}
+.carousel__card:nth-child(6) {
+  transform: rotateY(225deg) translateZ(25rem);
+}
+.carousel__card:nth-child(7) {
+  transform: rotateY(270deg) translateZ(25rem);
+}
+.carousel__card:nth-child(8) {
+  transform: rotateY(315deg) translateZ(25rem);
+}
+.carousel__btn {
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  background:#C5F264;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0 2rem;
+  margin-top: 20px;
+  
+
+}
+.carousel__btn:hover {
+  transform: scale(1.04);
+  background: #C5F264;
+
+}
+
+
+
+@media only screen and (max-width:971px){
+.containerr{
+flex-direction: column;
+width: 100%;
+margin: 0 20px;
+}
+.leftt{
+width: 90%;
+height: 400px;
+}
+.rightt{
+height: 590px;
+width: 85%;
+margin: 0;
+margin-top: -100px;
+}
+}
+
+@media only screen and (max-width:631px){
+.containerr{
+flex-direction: column;
+width: 100%;
+margin: 0 20px;
+}
+.leftt{
+width: 80%;
+height: 300px;
+}
+
+.rightt{
+
+height: 100%;
+width: 70%;
+margin: 0;
+margin-top: -100px;
+}
+}
+
+@media screen and (max-width: 770px){
+.navbaarr{
+  padding: 0;
+}
+.navbaarr .logo{
+top: 40px;
+left: 20px;
+}
+
+.navbaarr .menu-hamburger{
+  display: block;
+}
+.nav-links{
+top: 0;
+line-height: 50px;
+left: 0;
+position: absolute;
+backdrop-filter: blur(10px);
+background-color: rgba(240, 233, 233, 0.267);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+margin-left:-100% ;
+transition: all 0.5s ease;
+}
+.nav-links.mobile-menu{
+margin-left: 0;
+
+}
+.nav-links ul{
+display: flex;
+flex-direction: column;
+
+}
+#background-video {
+height: 40vh;
+
+}
+
+}
