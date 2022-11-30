@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+  <nav class=" fixed-top  ">
+    <div class="navbaarr">
+    <a class="logo" href="#"><img src="boujmilim/dawya-removebg-preview 2.png" alt="" height="50px"></a>
+    <div class="nav-links">
+      <ul>
+        <li class=""><a href="#">ACCEUIL</a></li>
+        <li><a href="#">A PROPOS DE </a></li>
+        <li><a href="#">LES OFFRES</a></li>
+        <li><a href="#">RESERVATION</a></li>
+      </ul>
+    </div>
+    <img class="menu-hamburger" src="flags/2311531.png" alt="">
+</div>
+  </nav>
+    <header></header>
+     <script>
+       const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+     </script>  
+       <video id="background-video" autoplay loop muted poster="boujmil images/Espace Arbre 3.jpg">
+        <source src="boujmil.mp4" type="video/mp4">
+        </video>
+        <section class="sect">
+          <div class="containerr">
+              <div class="leftt">
+                <span class="containerSS">
+                    <span class="langWrap">
+                        <a  href="#francais" style="margin-top: 50px;" language='FRANCAIS' class="active" id="francais"><img src="flags/download.png" class="immg" alt=""></a>
+                        <a href="#espagnole" language='ESPAGNOLE' id="espagnole"><img src="flags/download (2).png" class="immg" alt=""></a>
+                        <a  href="#english" language='ENGLISH' id="english"><img src="flags/download (1).png" class="immg" alt=""></a>
+                    </span>
+                </span>
+                  
+              </div>
+              <div class="rightt" id="description">
+                
+                  <div class="content" >
+                      <h1 class="title" >A PROPOS DE </h1>
+                      <p class="description" > Vous êtes en quête d’une expérience totalement inédite et singulière en pleine
+                          nature ? … Alors laissez-vous emporter par des expériences 100 % nature
+                          avec DAWYA NATURES pour le plaisir d’un retour au source en profitant
+                          intelligemment et avec respect l’arrière pays Jbala et ses espaces !
+                          Un trésors du monde rural, le Douar Boujmil est un village pittoresque qui
+                          s’offrent à vous ; ces espaces naturels exceptionnels, ces habitants Al-Houz
+                          restés traditionnellement paysans et simple, ces montages calcaires facturés
+                          et majestueuses, sa(ses) source(s) d’eau clair et résurgences permanente(s),
+                          ces rochers comme des statuts millénaires, sa faune - singe Mangot ,
+                          corneille, épervier et autres rapaces, sa flore luxuriante au printemps e ces
+                          olivier géants mufti-centenaire , son panorama unique sur la méditerranée et
+                          les montagne du Rif !
+                          Dans le prolongement de la chaîne Monte Blanco, Boujmil est à 150 mètre
+                          d’altitude et le pic du mont Boujmil à 681 m avec une vue magnifique sur la
+                          mer méditerranée.
+                          Le Douar Boujmil, un site encore méconnue et à préserver, est
+                          espace idéal pour un retour à la nature dont nous avons tous
+                          besoin !
+                      </p>
+                      <!-- <a href="#" class="bnt"> click me</a> -->
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script>
+        const langEl = document.querySelector('.langWrap');
+        const link = document.querySelectorAll('a');
+        const titleEl = document.querySelector('.title');
+        const descrEl = document.querySelector('.description');
+    
+        link.forEach(el => {
+          el.addEventListener('click', () => {
+            langEl.querySelector('.active').classList.remove('active');
+            el.classList.add('active');
+    
+            const attr = el.getAttribute('language');
+    
+            titleEl.textContent = data[attr].title;
+            descrEl.textContent = data[attr].description;
+          });
+        });
+        
+        var data = {
+  "FRANCAIS": 
+  {
+    "title": "A PROPOS DE",
+    "description": 
+        " Vous êtes en quête d’une expérience totalement inédite et singulière en pleine nature ? … Alors laissez-vous emporter par des expériences 100 % nature avec DAWYA NATURES pour le plaisir d’un retour au source en profitant intelligemment et avec respect l’arrière pays Jbala et ses espaces ! Un trésors du monde rural, le Douar Boujmil est un village pittoresque qui s’offrent à vous ; ces espaces naturels exceptionnels, ces habitants Al-Houz restés traditionnellement paysans et simple, ces montages calcaires facturés et majestueuses, sa(ses) source(s) d’eau clair et résurgences permanente(s), ces rochers comme des statuts millénaires, sa faune - singe Mangot , corneille, épervier et autres rapaces, sa flore luxuriante au printemps e ces olivier géants mufti-centenaire , son panorama unique sur la méditerranée et les montagne du Rif ! Dans le prolongement de la chaîne Monte Blanco, Boujmil est à 150 mètre d’altitude et le pic du mont Boujmil à 681 m avec une vue magnifique sur la mer méditerranée. Le Douar Boujmil, un site encore méconnue et à préserver, est espace idéal pour un retour à la nature dont nous avons tous besoin !"
+  },
+  "ESPAGNOLE": 
+  {
+    "title":"SOBRE",
+    "description": 
+        "¿Está buscando una experiencia completamente nueva y única en el corazón de la naturaleza? … ¡Así que déjese llevar por experiencias 100% naturales con DAWYA NATURES por el placer de volver a la fuente disfrutando de manera inteligente y respetuosa del interior de Jbala y sus espacios! Un tesoro del mundo rural, el Douar Boujmil es un pueblo pintoresco a su disposición; estos espacios naturales excepcionales, estos habitantes de Al-Houz que han permanecido tradicionalmente campesinos y sencillos, estas montañas calizas escarpadas y majestuosas, su(s) fuente(s) de agua clara y resurgimiento(s) permanente(s), estas rocas como estatutos milenarios, su fauna - Mangot mono, corneja, gavilán y otras rapaces, su exuberante flora en primavera y estos gigantes olivos centenarios, ¡su panorama único del Mediterráneo y las montañas del Rif! En la extensión de la cadena Monte Blanco, Boujmil se encuentra a 150 metros sobre el nivel del mar y la cima del Monte Boujmil a 681 m con una magnífica vista del mar Mediterráneo. ¡El Douar Boujmil, un sitio aún desconocido y por preservar, es un espacio ideal para un regreso a la naturaleza que todos necesitamos!"
+  },
+  "ENGLISH": 
+  {
+    "title": "ABOUT",
+    "description": 
+        "Are you looking for a completely new and unique experience in the heart of nature? … So let yourself be carried away by 100% nature experiences with DAWYA NATURES for the pleasure of a return to the source by intelligently and respectfully enjoying the Jbala hinterland and its spaces! A treasure of the rural world, the Douar Boujmil is a picturesque village available to you; these exceptional natural spaces, these Al-Houz inhabitants who have traditionally remained peasants and simple, these steep and majestic limestone mountains, its source(s) of clear water and permanent resurgence(s), these rocks like millennial statutes, its fauna - Mangot monkey, crow, sparrowhawk and other birds of prey, its luxuriant flora in spring and these giant centuries-old olive trees, its unique panorama of the Mediterranean and the Rif mountains! In the extension of the Monte Blanco chain, Boujmil is 150 meters above sea level and the peak of Mount Boujmil at 681 m with a magnificent view of the Mediterranean Sea. The Douar Boujmil, a site still unknown and to be preserved, is an ideal space for a return to nature that we all need!"
+  }
+}
+      </script>
+     <!--  <section class="sectionn">
+        <div>
+            
+        </div>
+    <br>
+      <div class="carousel">
+        <div class="carousel__cards">
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Boujmil Piste Arc en ciel.JPG" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Boujmil Village face 4.jpg" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Espace Arbre 3.jpg" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Boujmil Vue villge.jpg" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Espace Montage eau .jpeg" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Espace Rocher 6.jpg" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Espace Montage eau .jpeg" alt="oops!!">
+          </div>
+          <div class="carousel__card">
+            <img class="carousel__img"
+                 src="boujmilim/Espace Montagne Vue.jpg" alt="oops!!">
+          </div>
+      
+        </div>
+        
+        <div class="carousel__control">
+          <button class="carousel__btn carousel__btn--back">&#8678;précédent</button>
+          <button class="carousel__btn carousel__btn--next">avant&#8680;</button>
+        </div>
+      </div>
+    </section>
+       
+          <script>
+       const next = document.querySelector(".carousel__btn--next"),
+        back = document.querySelector(".carousel__btn--back"),
+        carousel = document.querySelector(".carousel__cards");
+      let angle = 0;
+      
+      next.addEventListener("click", () => {
+        angle -= 45;
+        carousel.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
+      });
+      
+      back.addEventListener("click", () => {
+        angle += 45;
+        carousel.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
+      });
+      
+          </script> -->
+          <section class="tot">
+            <div class="ui-card" >
+                <img src="boujmilim/Boujmil Village  copie 2.jpg" alt="">
+                <div class="descriptionnn">
+                    <p style="font-family: Century Gothic;">/Boujmil Village  </p>
+                </div>
+    
+            </div>
+            <div class="ui-card" style="margin-left:50px ;">
+                <img src="boujmilim/Boujmil Vue villge.jpg" alt="">
+                <div class="descriptionnn">
+                    <p style="font-family: Century Gothic;">Boujmil Vue villge</p>
+                </div>
+    
+            </div>
+            <div class="ui-card" style="margin-left:50px ;">
+                <img src="boujmilim/Espace Montage eau .jpeg" alt="">
+                <div class="descriptionnn">
+                    <p style="font-family: Century Gothic;">Espace Montage eau</p>
+                </div>
+    
+            </div>
+            <div class="ui-card" style="margin-left:50px ;">
+                <img src="boujmilim/Dar Dawya maison.JPG" alt="">
+                <div class="descriptionnn">
+                    <p style="font-family: Century Gothic;">Dar Dawya maison</p>
+                </div>
+    
+            </div>
+            
+        </section>
+          <section class="body1">
+
+            <div class="card">
+                <div class="face front">
+                    <img src="offresimag/What_is_land_art.jpg" alt="">
+                    <h3>land art</h3>
+                </div>
+                <div class="face back">
+                    <h3>land art</h3>
+                    <p><b> Principe :</b> Créations d’installation land art éphémères en montage (mandala, suspension, 
+                        empilements…)	</p> 
+                       <p> <b> Période d’action : </b> Juin – Octobre - durée : 2,5 à 4 heures avec une pause ftour beldi </p>
+                       <p><b> Cibles : </b>Adultes & Enfants</p> 
+                       <p><b> Animateur :</b> Artistes ou Animateurs spécialistes land art</p> 
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="face front">
+                    <img src="offresimag/2c5mt09.jpg" alt="">
+                    <h3>Stages bien-être & énergie</h3>
+                </div>
+                <div class="face back">
+                    <h3>Stages bien-être & énergie</h3>
+                    <p><b> Principe :</b> Ballade douce avec des étapes Médiation, Yoga du rire, Gym douce, Qi-gong ou Méditation pleine conscience</p>
+                       <p><b> Période :</b>  Mars – Novembre  - durée : 4 heures avec un ftour beldi</p>
+                       <p><b>bCibles :</b>  Adulte & Adolescent </p> 
+                       <p><b> Animateur :</b> Animateur spécialisé</p>
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="face front">
+                    <img src="offresimag/J.L.-DAUVERGNECiel-et-Espace-850-00030-07high_001_autorisée.jpg" alt="">
+                    <h3>observation du ciel</h3>
+                </div>
+                <div class="face back">
+                    <h3>observation du ciel</h3>
+                    <p><b> Principe :</b> Promenades nocturnes et observation des étoiles avec des jumelles ou 
+                        un télescope.</p>
+                        <p><b>Période d’action : </b>  Février  – Novembre  - durée : 4 heures avec un ftour beldi</p>
+                       <p><b> Cibles : Adulte & Enfants</b></p> 
+                       <p><b> Animateur :</b> Animateur spécialisé</p>
+                    <div class="link">
+                        <a href="#">Details</a>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        <br>
+            <svg class="icons" style="display: none;">
+                <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                  <polyline points='328 112 184 256 328 400'
+                         style='fill:none;stroke:rgb(0, 0, 0);stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                </symbol>
+                <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                  <polyline points='184 112 328 256 184 400'
+                         style='fill:none;stroke:rgb(0, 0, 0);stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                </symbol>
+              </svg>
+            
+          </section>
+      <section class="back">
+        <div style="background-color: white; width: 780px; height:180px; margin-left: 400px; margin-top: 50px; border-radius: 15px; opacity: 0.9;">
+          <h1 style="text-align: center; color: #F47321; font-family:Lemon Milk; " id="reservation"><u>RESERVATION</u></h1>
+          <p style="margin-left: 10px; margin-top: 5px; font-family: Century Gothic; font-size: 13.4px;" >
+              <b> Merci de l’intérêt que vous portez à nos activités et nos expériences
+               insolites en pleine nature...</b> <br>
+                Pour mieux répondre à vos souhaits de découvertes avec <b><span style="color: #F47321;">Dawya Natures</span></b>,
+                 nous vous remercions de bien vouloir nous donner quelques informations
+              indispensables pour vous proposer notre offre la plus adapter et un budget
+              bien sûr. <br>
+               Ces informations resterons confidentielles et nous nous engageons à ne pas les
+              utiliser hors de nos propres activités
+           </p>
+      </div>
+          <div class="box">
+              <form class="login">
+                  <div class="login__field">
+                      <table>
+                          <tr>
+                              <td> 
+                                  <input type="text" class="login__input" id="Prenom" name="Prenom" placeholder="Prenom" required
+                                      style="margin-left: 50px;">
+                              </td>
+                              <td>
+                                  <input type="text" class="login__input" id="Nom" name="Nom" placeholder="Nom"
+                                      style="margin-left:100px ;">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="email" class="login__input" id="email" name="email" placeholder="Adesse e-mail"
+                                      style="margin-left:50px ;">
+                              </td>
+                              <td>
+                                  <input type="email" class="login__input" id="Confirmer" name="Confirmer"
+                                      placeholder="Confirmer adesse e-mail" style="margin-left:100px ; ">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" class="login__input" id="Age" name="Age" placeholder="Age"
+                                      style="margin-left:50px ; ">
+                              </td>
+                              <td>
+                                  <input type="tel" class="login__input" id="Mobile" name="Mobile" placeholder="Mobile"
+                                      style="margin-left:100px ; ">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" class="login__input" id="ville" name="ville" placeholder="Ville"
+                                      style="margin-left: 50px; ">
+                              </td>
+                              <td>
+                                  <input type="text" class="login__input" id="pays" name="pays" placeholder="Pays "
+                                      style="margin-left: 100px; ">
+                              </td>
+                          </tr>
+      
+                      </table>
+                      <select class="login__input" id="type" name="type" style="margin-left: 50px; width: 615px; ">
+                          <option value="Seul(e)">Seul(e)</option>
+                          <option value="couple">Un couple</option>
+                          <option value="famille">En famille</option>
+                          <option value="amis">Entre amis</option>
+                          <option value="groupe">En groupe</option>
+                          <option value="Entreprise">Une Entreprise</option>
+                      </select>
+                      <table style="margin-bottom: 20px;">
+                          <tr>
+                              <td>
+                                  <input type="number" id="nombre" name="nombre" class="login__input"
+                                      placeholder="Nombre d'adultes" style="margin-left: 50px; ">
+                              </td>
+                              <td>
+                                  <input type="number" id="enfants" name="enfants" class="login__input"
+                                      placeholder="Nombre d'enfants(-12 ans)" style="margin-left:100px; ">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="date" id="début" name="début" class="login__input" style="margin-left: 50px; "
+                                      placeholder="DATE ENTREE">
+                              </td>
+                              <td>
+                                  <input type="date" id="fin" name="fin" class="login__input" style="margin-left: 100px; "
+                                      placeholder="DATE SORTIE">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <select class="login__input" id="duree" name="duree" style="margin-left: 50px; width: 250px;">
+                                      <option value="Seul(e)">Matin</option>
+                                      <option value="couple">Apres midi</option>
+                                      <option value="famille">Journee complete</option>
+                                      <option value="amis">2 jours</option>
+                                  </select>
+                              </td>
+                              <td>
+                                  <div class="multiselect">
+                                      <div class="selectBox" onclick="showCheckboxes()">
+                                          <select class="login__input" style="margin-left: 100px; width: 250px;">
+                                              <option >Type d'activités(s) souhaitees</option>
+                                          </select>
+                                          <div class="overSelect"></div>
+                                      </div>
+                                      <div id="checkboxes">
+                                          <label for="1">
+                                              <input type="checkbox" id="1" />Randonnée Douce - 2h30</label>
+                                          <label for="2">
+                                              <input type="checkbox" id="2" /> Randonnée Dynamique - 2h30</label>
+                                          <label for="3">
+                                              <input type="checkbox" id="3" />Randonnée ARTISTIQUE SUR LE Sentier Land art Dawya - 3h</label>
+                                          <label for="4">
+                                              <input type="checkbox" id="4" />Atelier Bien être - 3h</label>
+                                          <label for="5">
+                                              <input type="checkbox" id="5" />Stage Botanique - 3h30</label>
+                                          <label for="6">
+                                              <input type="checkbox" id="6" />Promenade familiale AVEC un âne - 4h</label>
+                                          <label for="7">
+                                              <input type="checkbox" id="7" />Promenade familiale AVEC un âne - 6h30</label>
+                                          <label for="8">
+                                              <input type="checkbox" id="8" />Stage DE CREATION Land Art - 4h</label>
+                                          <label for="9">
+                                              <input type="checkbox" id="9" />Observation du ciel - 3h</label>
+                                          <label for="10">
+                                              <input type="checkbox" id="10" />Stages bien-être & énergie - 4h</label>
+                                          <label for="11">
+                                              <input type="checkbox" id="11" />retraite dawya bien-être - 8h</label>
+                                          <label for="12">
+                                              <input type="checkbox" id="12" />retraite dawya bien-être - 2 jours</label>
+                                          <label for="13">
+                                              <input type="checkbox" id="13" />Stages bien-être & énergie - 4h</label>
+                                          <label for="14">
+                                              <input type="checkbox" id="14" />Package Dawya découvertes-2jours</label> 
+                                      </div> 
+                              </td>
+                          </tr>
+                      </table>
+                      
+                      
+                      <label for="" style="margin-left:50px; font-family: Century Gothic;"><b>Repas Jbala sur place prepare par les fammes du Douar Boujmil :</b></label>
+                      <input type="checkbox" style="margin-left: 30px;">Dejeuner
+                      <input type="checkbox" style="margin-left: 30px;">Diner <br><br>
+                      <label for="" style="margin-left:50px; font-family: Century Gothic;"><b>Souhaitez vous dormir chez l'habitant du douar:</b></label>
+                      <input type="checkbox" style="margin-left: 80px;">La veille
+                      <input type="checkbox" style="margin-left: 30px;">La soir meme <br><br>
+                      <div class="multiselect">
+                          <div class="selectBox" onclick="internet()">
+                              <select class="login__input" style="margin-left: 50px; width: 620px;">
+                                  <option >Comment avez-vous connu notre site internet :</option>
+                              </select>
+                              <div class="overSelect"></div>
+                          </div>
+                          <div id="choix">
+                              <label for="12">
+                                  <input type="checkbox" id="12" />Reseaux sciaux(Facebook,Instagram,+)</label>
+                              <label for="13">
+                                  <input type="checkbox" id="13" />Publicite internet</label>
+                              <label for="14">
+                                  <input type="checkbox" id="14" />Moteur de recherche(Bouche a oreille un message envoye par nos soins)</label>
+                              <label for="15">
+                                  <input type="checkbox" id="15" />Autre(Passe ecrite,Guide voyage-guide du routard,Office de tourisme,Salon,Radio,TV)</label> 
+                          </div>
+                      </div>
+                  </div>
+                  <button type="submit" value="RESERVER" onclick="RESERVER()" class="button login__submit" style="margin-left: 280px;" > <a href="" style="text-decoration: none ; color: #F47321;">RESERVER</a></button>
+                      
+                  </div>
+              </form>
+          </div>
+    <script>
+            
+              var expanded = false;
+          
+              function showCheckboxes() {
+                  var checkboxes = document.getElementById("checkboxes");
+                  if (!expanded) {
+                      checkboxes.style.display = "block";
+                      expanded = true;
+                  } else {
+                      checkboxes.style.display = "none";
+                      expanded = false;
+                  }
+              }
+              var expanded = false;
+          
+              function internet() {
+                  var checkboxes = document.getElementById("choix");
+                  if (!expanded) {
+                      checkboxes.style.display = "block";
+                      expanded = true;
+                  } else {
+                      checkboxes.style.display = "none";
+                      expanded = false;
+                  }
+              }
+              function RESERVER(){
+                  alert('guygduyushf_iuhkjnoiuhduyvièrfiud')
+              }
+          </script>
+      </section>
+</body>
+</html>
